@@ -1,0 +1,89 @@
+body {
+  font-size: 28px;
+  font-family: Work Sans, sans-serif;
+  overflow: hidden;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: black; }
+
+.ticker {
+  position: fixed;
+  height: 1.5em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 100; }
+
+.ticker a {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent; }
+
+.top-ticker {
+  top: 0;
+  left: 1.5em;
+  width: calc(100% + 1.5em); }
+
+.bottom-ticker {
+  bottom: 0;
+  left: 1.5em;
+  width: calc(100% - 3em);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.left-ticker {
+  width: calc(100vh - 3em);
+  bottom: 1.5em;
+  left: 1.5em;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+
+.right-ticker {
+  width: calc(100vh + 3em);
+  bottom: 1.5em;
+  right: 1.5em;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+canvas {
+  position: fixed;
+  z-index: 0; }
+  canvas.grabbable {
+    cursor: -webkit-grab;
+    cursor: grab; }
+  canvas.grab {
+    cursor: -webkit-grabbing;
+    cursor: grabbing; }
+
+.bold {
+  font-weight: 800; }
+
+.video-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  width: 80%;
+  left: 10%;
+  height: 0;
+  padding-bottom: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: 3px solid silver;
+  border-top: 15px solid silver; }
+
+video {
+  width: 100%; }
